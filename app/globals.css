@@ -117,39 +117,37 @@
    CSS CUSTOM PROPERTIES — DESIGN TOKENS
 ───────────────────────────────────────── */
 :root {
-  /* Backgrounds */
-  --bg-base:        #0a0b0d;
-  --bg-surface:     #0f1114;
-  --bg-elevated:    #161a1f;
-  --bg-overlay:     #1e2329;
+  /* Backgrounds — warm ivory, not stark white */
+  --bg-base:        #faf8f4;
+  --bg-surface:     #f4f0e6;
+  --bg-elevated:    #ffffff;
+  --bg-overlay:     #ece5d5;
 
-  /* Typography */
-  --text-primary:   #f5f1e8;
-  --text-secondary: #a8b0bc;
-  --text-muted:     #606878;
-  --text-subtle:    #464d5c;
+  /* Typography — deep charcoal-navy, not pure black */
+  --text-primary:   #1a1d24;
+  --text-secondary: #4a4f5c;
+  --text-muted:     #767b88;
+  --text-subtle:    #a4a8b3;
 
-  /* Accent - Emerald */
-  --accent-emerald: #2ec47f;
-  --accent-emerald-dim: #0d8f54;
-  --accent-emerald-glow: rgba(46, 196, 127, 0.15);
+  /* Accent — Bronze/Gold (PRIMARY, matches logo) */
+  --accent-gold:      #a6790f;
+  --accent-gold-dim:  #7a5a00;
+  --accent-gold-glow: rgba(166, 121, 15, 0.14);
 
-  /* Accent - Champagne */
-  --accent-gold:    #c89e2a;
-  --accent-gold-dim: #7a5a00;
-  --accent-gold-glow: rgba(200, 158, 42, 0.12);
+  /* Accent — Emerald (SECONDARY, used sparingly for "growth/positive" signals) */
+  --accent-emerald:      #0a6e41;
+  --accent-emerald-dim:  #085334;
+  --accent-emerald-glow: rgba(10, 110, 65, 0.10);
 
-  /* Borders */
-  --border-subtle:  rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.1);
-  --border-accent:  rgba(46, 196, 127, 0.2);
+  /* Borders — need to be visible on light bg, not white-on-dark */
+  --border-subtle:  rgba(20, 20, 25, 0.08);
+  --border-default: rgba(20, 20, 25, 0.14);
+  --border-accent:  rgba(166, 121, 15, 0.35);
 
-  /* Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* Transitions */
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
   --duration-fast: 200ms;
@@ -313,9 +311,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.75rem;
-  background: var(--accent-emerald-dim);
-  color: #f5f1e8;
-  border: 0.5px solid var(--accent-emerald);
+  background: var(--accent-gold);
+  color: #ffffff;
+  border: 0.5px solid var(--accent-gold-dim);
   border-radius: var(--radius-sm);
   font-size: 0.875rem;
   font-weight: 500;
@@ -331,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(46,196,127,0.15) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(166,121,15,0.15) 0%, transparent 100%);
   opacity: 0;
   transition: opacity var(--duration-base) ease;
 }
@@ -341,8 +339,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  border-color: var(--accent-emerald);
-  box-shadow: 0 0 24px rgba(46, 196, 127, 0.2);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 24px rgba(166, 121, 15, 0.2);
   transform: translateY(-1px);
 }
 
@@ -365,14 +363,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secondary:hover {
   border-color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 /* ─────────────────────────────────────────
    CARD STYLES
 ───────────────────────────────────────── */
 .card-glass {
-  background: rgba(22, 26, 31, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 0.5px solid var(--border-subtle);
@@ -382,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-glass:hover {
   border-color: var(--border-accent);
-  box-shadow: 0 0 32px rgba(46, 196, 127, 0.06);
+  box-shadow: 0 0 32px rgba(166, 121, 15, 0.06);
 }
 
 /* ─────────────────────────────────────────
@@ -390,8 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 ───────────────────────────────────────── */
 .bg-grid {
   background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 

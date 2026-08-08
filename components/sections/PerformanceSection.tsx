@@ -157,12 +157,12 @@ export default function PerformanceSection() {
                     <g key={v}>
                       <line
                         x1={PAD.left} y1={y} x2={W - PAD.right} y2={y}
-                        stroke="rgba(255,255,255,0.04)" strokeWidth="0.5"
+                        stroke="rgba(20,20,25,0.08)" strokeWidth="0.5"
                         strokeDasharray={v === 0 ? "none" : "3 6"}
                       />
                       <text
                         x={PAD.left - 6} y={y + 3}
-                        fontSize="7" fill="rgba(168,176,188,0.4)"
+                        fontSize="7" fill="rgba(118,123,136,0.6)"
                         textAnchor="end" fontFamily="Inter,monospace"
                       >
                         {v}%
@@ -176,7 +176,7 @@ export default function PerformanceSection() {
                   <text
                     key={i}
                     x={scaleX(i)} y={H - 6}
-                    fontSize="7" fill="rgba(168,176,188,0.4)"
+                    fontSize="7" fill="rgba(118,123,136,0.6)"
                     textAnchor="middle" fontFamily="Inter,monospace"
                   >
                     {d.month}
@@ -196,8 +196,8 @@ export default function PerformanceSection() {
                 {/* Gradients */}
                 <defs>
                   <linearGradient id="etGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="rgba(46,196,127,0.4)" />
-                    <stop offset="100%" stopColor="rgba(46,196,127,0)" />
+                    <stop offset="0%" stopColor="rgba(10,110,65,0.2)" />
+                    <stop offset="100%" stopColor="rgba(10,110,65,0)" />
                   </linearGradient>
                 </defs>
 
@@ -205,7 +205,7 @@ export default function PerformanceSection() {
                 <motion.path
                   d={niftyPath}
                   fill="none"
-                  stroke="rgba(100,116,139,0.6)"
+                  stroke="rgba(74,79,92,0.6)"
                   strokeWidth="1.5"
                   pathLength={1}
                   initial={{ pathLength: 0, opacity: 0 }}
@@ -217,7 +217,7 @@ export default function PerformanceSection() {
                 <motion.path
                   d={etPath}
                   fill="none"
-                  stroke="rgba(46,196,127,0.9)"
+                  stroke="rgba(10,110,65,0.8)"
                   strokeWidth="2"
                   pathLength={1}
                   initial={{ pathLength: 0, opacity: 0 }}
@@ -228,14 +228,14 @@ export default function PerformanceSection() {
                 {/* End point dots */}
                 <motion.circle
                   cx={scaleX(chartData.length - 1)} cy={scaleY(2)}
-                  r="3" fill="rgba(100,116,139,0.8)"
+                  r="3" fill="rgba(74,79,92,0.8)"
                   initial={{ scale: 0 }} animate={inView ? { scale: 1 } : {}}
                   transition={{ delay: 2.5 }}
                 />
                 <motion.circle
                   cx={scaleX(chartData.length - 1)} cy={scaleY(39.8)}
-                  r="3.5" fill="rgba(46,196,127,1)"
-                  style={{ filter: "drop-shadow(0 0 4px rgba(46,196,127,0.6))" }}
+                  r="3.5" fill="rgba(10,110,65,1)"
+                  style={{ filter: "drop-shadow(0 0 4px rgba(10,110,65,0.4))" }}
                   initial={{ scale: 0 }} animate={inView ? { scale: 1 } : {}}
                   transition={{ delay: 2.7 }}
                 />
@@ -244,7 +244,7 @@ export default function PerformanceSection() {
                 <motion.text
                   x={scaleX(chartData.length - 1) + 6}
                   y={scaleY(2) + 3}
-                  fontSize="8" fill="rgba(100,116,139,0.7)" fontFamily="Inter,monospace"
+                  fontSize="8" fill="rgba(74,79,92,0.9)" fontFamily="Inter,monospace"
                   initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}}
                   transition={{ delay: 2.8 }}
                 >
@@ -253,7 +253,7 @@ export default function PerformanceSection() {
                 <motion.text
                   x={scaleX(chartData.length - 1) + 6}
                   y={scaleY(39.8) + 3}
-                  fontSize="8" fill="rgba(46,196,127,0.9)" fontFamily="Inter,monospace" fontWeight="500"
+                  fontSize="8" fill="rgba(10,110,65,1)" fontFamily="Inter,monospace" fontWeight="500"
                   initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}}
                   transition={{ delay: 2.9 }}
                 >
@@ -264,11 +264,11 @@ export default function PerformanceSection() {
               {/* Legend */}
               <div className="flex items-center gap-6 px-5 py-3" style={{ borderTop: "0.5px solid var(--border-subtle)" }}>
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-px" style={{ backgroundColor: "rgba(46,196,127,0.9)", height: "2px" }} />
+                  <div className="w-6 h-px" style={{ backgroundColor: "rgba(10,110,65,0.8)", height: "2px" }} />
                   <span className="text-[0.65rem] font-medium" style={{ color: "var(--text-secondary)" }}>ET Growth Fund</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-6" style={{ height: "1.5px", backgroundColor: "rgba(100,116,139,0.6)" }} />
+                  <div className="w-6" style={{ height: "1.5px", backgroundColor: "rgba(74,79,92,0.6)" }} />
                   <span className="text-[0.65rem]" style={{ color: "var(--text-muted)" }}>Nifty 50</span>
                 </div>
                 <span className="ml-auto text-[0.6rem]" style={{ color: "var(--text-subtle)" }}>Mar 2025 – Apr 2026</span>

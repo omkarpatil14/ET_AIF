@@ -26,7 +26,7 @@ const volatilityFactors = [
     description:
       "Foreign Institutional Investor flows have become increasingly erratic, creating sharp dislocations in Indian equity and currency markets.",
     stat: "Unpredictable",
-    color: "rgba(148, 163, 184, 0.8)",
+    color: "rgba(118, 123, 136, 0.9)",
   },
   {
     id: "geo",
@@ -42,7 +42,7 @@ const volatilityFactors = [
     description:
       "Unhedged equity portfolios have experienced drawdowns exceeding 25–35% during stress events — without systematic protection, recovery timelines are extended.",
     stat: ">25% Events",
-    color: "rgba(239, 68, 68, 0.6)",
+    color: "rgba(220, 38, 38, 0.8)",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function VolatilitySection() {
             animate={inView ? { scaleX: 1, opacity: 0.04 } : {}}
             transition={{ duration: 1.5, delay: 0.2 + i * 0.15, ease: "easeOut" }}
             className="absolute left-0 right-0 h-px origin-left"
-            style={{ top: `${pos * 100}%`, backgroundColor: "var(--accent-emerald)" }}
+            style={{ top: `${pos * 100}%`, backgroundColor: "var(--accent-gold)" }}
           />
         ))}
       </div>
@@ -229,17 +229,17 @@ export default function VolatilitySection() {
               >
                 {/* Grid */}
                 {[40, 80, 120, 160].map((y) => (
-                  <line key={y} x1="0" y1={y} x2="400" y2={y} stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
+                  <line key={y} x1="0" y1={y} x2="400" y2={y} stroke="rgba(20,20,25,0.06)" strokeWidth="0.5" />
                 ))}
                 {[80, 160, 240, 320].map((x) => (
-                  <line key={x} x1={x} y1="0" x2={x} y2="200" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
+                  <line key={x} x1={x} y1="0" x2={x} y2="200" stroke="rgba(20,20,25,0.06)" strokeWidth="0.5" />
                 ))}
 
                 {/* Volatile market path */}
                 <motion.path
                   d="M0,120 C30,90 50,140 80,100 C110,60 120,150 150,110 C180,70 190,160 220,85 C250,20 260,140 290,70 C320,10 340,130 370,60 L400,50"
                   fill="none"
-                  stroke="rgba(100,116,139,0.4)"
+                  stroke="rgba(118,123,136,0.5)"
                   strokeWidth="1.5"
                   initial={{ pathLength: 0 }}
                   animate={inView ? { pathLength: 1 } : {}}
@@ -250,7 +250,7 @@ export default function VolatilitySection() {
                 <motion.path
                   d="M0,120 C40,115 80,108 120,100 C160,92 200,84 240,74 C280,64 320,55 360,48 L400,44"
                   fill="none"
-                  stroke="rgba(46,196,127,0.7)"
+                  stroke="rgba(166,121,15,0.85)"
                   strokeWidth="1.5"
                   initial={{ pathLength: 0 }}
                   animate={inView ? { pathLength: 1 } : {}}
@@ -258,10 +258,10 @@ export default function VolatilitySection() {
                 />
 
                 {/* Labels */}
-                <text x="8" y="195" fontSize="7" fill="rgba(100,116,139,0.5)" fontFamily="Inter,monospace" letterSpacing="1">
+                <text x="8" y="195" fontSize="7" fill="rgba(118,123,136,0.7)" fontFamily="Inter,monospace" letterSpacing="1">
                   UNHEDGED
                 </text>
-                <text x="8" y="185" fontSize="7" fill="rgba(46,196,127,0.6)" fontFamily="Inter,monospace" letterSpacing="1">
+                <text x="8" y="185" fontSize="7" fill="rgba(166,121,15,0.9)" fontFamily="Inter,monospace" letterSpacing="1">
                   HEDGED
                 </text>
               </svg>

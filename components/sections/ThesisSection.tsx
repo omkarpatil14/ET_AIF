@@ -9,7 +9,7 @@ const theses = [
     title: "Capture Growth",
     tagline: "Participate in India's structural growth.",
     description:
-      "High-conviction long positions in quality Indian equities — businesses with strong fundamentals, sectoral tailwinds, and durable competitive advantages — form the core of the portfolio.",
+      "High-conviction long positions in quality Indian equities  businesses with strong fundamentals, sectoral tailwinds, and durable competitive advantages  form the core of the portfolio.",
     points: [
       "60–80% long-short equity exposure",
       "Bottom-up fundamental research",
@@ -23,7 +23,7 @@ const theses = [
     title: "Hedge Systematically",
     tagline: "Systematic downside protection — always on.",
     description:
-      "Proprietary hedging is not reactive — it is structural. The fund employs overlapping hedge layers that respond dynamically to market conditions without requiring market timing.",
+      "Proprietary hedging is not reactive  it is structural. The fund employs overlapping hedge layers that respond dynamically to market conditions without requiring market timing.",
     points: [
       "Nifty / Sensex index put options",
       "Stock futures (tactical shorts)",
@@ -37,7 +37,7 @@ const theses = [
     title: "Seek Asymmetry",
     tagline: "Asymmetric outcomes: capped down, open up.",
     description:
-      "By combining growth capture with systematic hedging, the strategy aims to deliver stronger risk-adjusted returns — with lower volatility and smaller drawdowns than unhedged exposure.",
+      "By combining growth capture with systematic hedging, the strategy aims to deliver stronger risk-adjusted returns  with lower volatility and smaller drawdowns than unhedged exposure.",
     points: [
       "Lower drawdown target vs. Nifty 50",
       "Return objective: 15–25% p.a.*",

@@ -96,7 +96,7 @@ export default function Hero() {
             style={{ color: "var(--text-secondary)" }}
           >
             EquiTrust is a Category III AIF employing long-short equity strategies and dynamic
-            hedging to seek asymmetric returns — participating in India&apos;s growth while
+            hedging to seek asymmetric returns . participating in India&apos;s growth while
             systematically managing downside risk.
           </motion.p>
 

@@ -101,7 +101,7 @@ export default function MarketVisualization() {
     };
 
     const drawGrid = (W: number, H: number) => {
-      ctx.strokeStyle = "rgba(255,255,255,0.025)";
+      ctx.strokeStyle = "rgba(20, 20, 25, 0.05)";
       ctx.lineWidth = 0.5;
 
       const cellW = W / 10;
@@ -167,7 +167,7 @@ export default function MarketVisualization() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(46, 196, 127, ${p.alpha})`;
+        ctx.fillStyle = `rgba(166, 121, 15, ${p.alpha * 0.7})`;
         ctx.fill();
       });
     };
@@ -180,12 +180,12 @@ export default function MarketVisualization() {
       const labels = ["+5%", "+10%", "+15%", "+20%"];
       labels.forEach((label, i) => {
         const y = H * 0.25 - i * H * 0.08;
-        ctx.fillStyle = "rgba(168, 176, 188, 0.2)";
+        ctx.fillStyle = "rgba(118, 123, 136, 0.6)";
         ctx.textAlign = "right";
         ctx.fillText(label, W - 12, y);
 
         // Dashed line
-        ctx.strokeStyle = "rgba(255,255,255,0.04)";
+        ctx.strokeStyle = "rgba(20, 20, 25, 0.1)";
         ctx.lineWidth = 0.5;
         ctx.setLineDash([4, 8]);
         ctx.beginPath();
@@ -203,7 +203,7 @@ export default function MarketVisualization() {
       ctx.fillStyle = "rgba(100, 116, 139, 0.6)";
       ctx.fillText("MARKET", 16, H - 32);
 
-      ctx.fillStyle = "rgba(46, 196, 127, 0.7)";
+      ctx.fillStyle = "rgba(166, 121, 15, 0.9)";
       ctx.fillText("HEDGED", 16, H - 16);
     };
 
@@ -225,8 +225,8 @@ export default function MarketVisualization() {
       // Volatile market line (muted gray-blue)
       drawLine(volatilePts, "rgba(100, 116, 139, 0.5)", 1, "rgba(100,116,139,0.3)");
 
-      // Hedged line (emerald)
-      drawLine(hedgedPts, "rgba(46, 196, 127, 0.9)", 1.5, "rgba(46, 196, 127, 0.4)");
+      // Hedged line (gold)
+      drawLine(hedgedPts, "rgba(166, 121, 15, 0.85)", 1.5, "rgba(166, 121, 15, 0.3)");
 
       // Particles
       drawParticles(W, H);
