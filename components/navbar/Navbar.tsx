@@ -57,12 +57,12 @@ export default function Navbar() {
                 className="flex items-center gap-2.5"
               >
                 {/* Image Logo */}
-                <img 
-                  src="/logo.png" 
-                  alt="EquiTrust Logo" 
+                <img
+                  src="/logo.png"
+                  alt="EquiTrust Logo"
                   className="h-8 w-auto sm:h-10 object-contain rounded-sm"
                 />
-                
+
                 <div
                   className="hidden sm:block h-3.5 w-px ml-1.5"
                   style={{ backgroundColor: "var(--border-subtle)" }}
@@ -186,7 +186,7 @@ export default function Navbar() {
                 ))}
               </nav>
 
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.4 }}
@@ -196,7 +196,7 @@ export default function Navbar() {
                   Investor Enquiry
                   <ArrowUpRight size={14} />
                 </Link>
-              </motion.div>
+              </motion.div> */}
 
               {/* Contact info */}
               <motion.div

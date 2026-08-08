@@ -1,19 +1,17 @@
 import dynamic from "next/dynamic";
 import Hero from "@/components/hero/Hero";
 import MetricsStrip from "@/components/sections/MetricsStrip";
-
-// Dynamically import sections below the fold to reduce initial load time and JS payload
-const VolatilitySection = dynamic(() => import("@/components/sections/VolatilitySection"));
-const OpportunitySection = dynamic(() => import("@/components/sections/OpportunitySection"));
-const ThesisSection = dynamic(() => import("@/components/sections/ThesisSection"));
-const StrategySection = dynamic(() => import("@/components/sections/StrategySection"));
-const RiskSection = dynamic(() => import("@/components/sections/RiskSection"));
-const PerformanceSection = dynamic(() => import("@/components/sections/PerformanceSection"));
-const FundTermsSection = dynamic(() => import("@/components/sections/FundTermsSection"));
-const TeamSection = dynamic(() => import("@/components/sections/TeamSection"));
-const WhyEquitrustSection = dynamic(() => import("@/components/sections/WhyEquitrustSection"));
-const InvestorCTA = dynamic(() => import("@/components/sections/InvestorCTA"));
-const ContactSection = dynamic(() => import("@/components/sections/ContactSection"));
+import VolatilitySection from "@/components/sections/VolatilitySection";
+import OpportunitySection from "@/components/sections/OpportunitySection";
+import ThesisSection from "@/components/sections/ThesisSection";
+import StrategySection from "@/components/sections/StrategySection";
+import RiskSection from "@/components/sections/RiskSection";
+import PerformanceSection from "@/components/sections/PerformanceSection";
+import FundTermsSection from "@/components/sections/FundTermsSection";
+import TeamSection from "@/components/sections/TeamSection";
+import WhyEquitrustSection from "@/components/sections/WhyEquitrustSection";
+import InvestorCTA from "@/components/sections/InvestorCTA";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function HomePage() {
   return (
@@ -29,8 +27,8 @@ export default function HomePage() {
       <FundTermsSection />
       <TeamSection />
       <WhyEquitrustSection />
-      <InvestorCTA />
-      <ContactSection />
+      {/* <InvestorCTA />
+      <ContactSection /> */}
     </>
   );
 }

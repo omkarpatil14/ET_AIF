@@ -5,8 +5,8 @@ const navLinks = [
   { label: "Strategy", href: "/#strategy" },
   { label: "Risk Management", href: "/#risk" },
   { label: "Performance", href: "/#performance" },
-  { label: "Team", href: "/#team" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Team", href: "/#team" }
+  // { label: "Contact", href: "/#contact" },
 ];
 
 export default function Footer() {
@@ -27,9 +27,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-1.5 mb-4">
-              <img 
-                src="/logo.png" 
-                alt="EquiTrust Logo" 
+              <img
+                src="/logo.png"
+                alt="EquiTrust Logo"
                 className="h-10 w-auto object-contain rounded-sm"
               />
             </div>
