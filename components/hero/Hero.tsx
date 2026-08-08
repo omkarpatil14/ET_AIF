@@ -115,13 +115,13 @@ export default function Hero() {
                 className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
             </Link>
-            <Link href="/contact" className="btn-secondary group">
+            {/* <Link href="/contact" className="btn-secondary group">
               Investor Enquiry
               <ArrowUpRight
                 size={14}
                 className="opacity-50 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
-            </Link>
+            </Link> */}
           </motion.div>
         </div>
 

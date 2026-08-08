@@ -29,8 +29,8 @@ export default function HomePage() {
       <FundTermsSection />
       <TeamSection />
       <WhyEquitrustSection />
-      <InvestorCTA />
-      <ContactSection />
+      {/* <InvestorCTA />
+      <ContactSection /> */}
     </>
   );
 }

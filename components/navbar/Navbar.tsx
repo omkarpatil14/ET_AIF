@@ -107,7 +107,7 @@ export default function Navbar() {
 
             {/* CTA + Mobile Menu */}
             <div className="flex items-center gap-4">
-              <Link
+              {/* <Link
                 href="/contact"
                 className="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium py-2 px-4 rounded-sm transition-all duration-300 group text-[var(--text-primary)] border border-[var(--border-default)] hover:text-[var(--accent-emerald)] hover:border-[var(--accent-emerald)]"
                 style={{
@@ -119,10 +119,10 @@ export default function Navbar() {
                   size={13}
                   className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 />
-              </Link>
+              </Link> */}
 
               {/* Hamburger */}
-              <button
+              {/* <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="lg:hidden flex items-center justify-center w-9 h-9 rounded-sm transition-colors duration-200"
                 style={{ border: "0.5px solid var(--border-subtle)" }}
@@ -134,7 +134,7 @@ export default function Navbar() {
                 ) : (
                   <Menu size={16} style={{ color: "var(--text-primary)" }} />
                 )}
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function Navbar() {
                 ))}
               </nav>
 
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.4 }}
@@ -196,7 +196,7 @@ export default function Navbar() {
                   Investor Enquiry
                   <ArrowUpRight size={14} />
                 </Link>
-              </motion.div>
+              </motion.div> */}
 
               {/* Contact info */}
               <motion.div

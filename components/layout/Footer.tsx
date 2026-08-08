@@ -5,8 +5,8 @@ const navLinks = [
   { label: "Strategy", href: "/#strategy" },
   { label: "Risk Management", href: "/#risk" },
   { label: "Performance", href: "/#performance" },
-  { label: "Team", href: "/#team" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Team", href: "/#team" }
+  // { label: "Contact", href: "/#contact" },
 ];
 
 export default function Footer() {
