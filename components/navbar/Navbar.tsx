@@ -122,7 +122,7 @@ export default function Navbar() {
               </Link> */}
 
               {/* Hamburger */}
-              {/* <button
+              <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="lg:hidden flex items-center justify-center w-9 h-9 rounded-sm transition-colors duration-200"
                 style={{ border: "0.5px solid var(--border-subtle)" }}
@@ -134,7 +134,7 @@ export default function Navbar() {
                 ) : (
                   <Menu size={16} style={{ color: "var(--text-primary)" }} />
                 )}
-              </button> */}
+              </button>
             </div>
           </div>
         </div>
