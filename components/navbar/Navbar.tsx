@@ -165,6 +165,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={link.href}
+                      onClick={() => setMenuOpen(false)}
                       className="block py-5 border-b group"
                       style={{
                         borderColor: "var(--border-subtle)",
@@ -217,11 +218,11 @@ export default function Navbar() {
                   +91 9577700010
                 </a>
                 <a
-                  href="mailto:shivagrover@equitrustsolutions.com"
+                  href="mailto:info@equitrustsolutions.com"
                   className="block text-sm transition-colors"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  shivagrover@equitrustsolutions.com
+                  info@equitrustsolutions.com
                 </a>
               </motion.div>
             </div>

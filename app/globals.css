@@ -117,6 +117,8 @@
    CSS CUSTOM PROPERTIES — DESIGN TOKENS
 ───────────────────────────────────────── */
 :root {
+  --font-inter: "Inter", "system-ui", sans-serif;
+  
   /* Backgrounds — warm ivory, not stark white */
   --bg-base:        #faf8f4;
   --bg-surface:     #f4f0e6;

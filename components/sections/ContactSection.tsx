@@ -165,8 +165,8 @@ export default function ContactSection() {
                 { label: "Phone", value: "+91 9577700010", href: "tel:+919577700010" },
                 {
                   label: "Email",
-                  value: "shivagrover@equitrustsolutions.com",
-                  href: "mailto:shivagrover@equitrustsolutions.com",
+                  value: "info@equitrustsolutions.com",
+                  href: "mailto:info@equitrustsolutions.com",
                 },
                 {
                   label: "Website",

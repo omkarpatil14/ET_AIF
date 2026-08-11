@@ -21,7 +21,6 @@ const team = [
     description:
       "Leads research, market intelligence, and investment strategy formulation at EquiTrust.",
     accentColor: "var(--accent-gold)",
-    contact: "shivagrover@equitrustsolutions.com",
   },
 ];
 

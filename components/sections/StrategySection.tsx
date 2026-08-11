@@ -106,16 +106,7 @@ export default function StrategySection() {
             </motion.h2>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.4 }}
-          >
-            <Link href="/strategy" className="btn-secondary group text-sm">
-              Full Strategy
-              <ArrowUpRight size={13} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
-          </motion.div>
+
         </div>
 
         {/* Interactive architecture diagram */}

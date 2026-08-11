@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <MetricsStrip />
+      {/* <MetricsStrip /> */}
       <VolatilitySection />
       <OpportunitySection />
       <ThesisSection />

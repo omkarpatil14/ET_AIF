@@ -95,9 +95,8 @@ export default function Hero() {
             className="text-base lg:text-lg leading-relaxed max-w-2xl mb-10"
             style={{ color: "var(--text-secondary)" }}
           >
-            EquiTrust is a Category III AIF employing long-short equity strategies and dynamic
-            hedging to seek asymmetric returns . participating in India&apos;s growth while
-            systematically managing downside risk.
+            Equitrust AIF will be employing long-short equity strategies and dynamic hedging to seek asymmetric returns, participating in India's growth while systematically managing downside risk.
+            Equitrust Growth Fund will be the maiden scheme of Equitrust AIF seeking Category III AIF SEBI registration.
           </motion.p>
 
           {/* CTAs */}
@@ -108,7 +107,7 @@ export default function Hero() {
             variants={textReveal}
             className="flex flex-wrap gap-4"
           >
-            <Link href="/strategy" className="btn-primary group">
+            <Link href="#strategy" className="btn-primary group">
               Explore the Strategy
               <ArrowUpRight
                 size={14}

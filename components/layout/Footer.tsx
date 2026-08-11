@@ -91,23 +91,10 @@ export default function Footer() {
                   Email
                 </p>
                 <a
-                  href="mailto:shivagrover@equitrustsolutions.com"
+                  href="mailto:info@equitrustsolutions.com"
                   className="text-sm transition-colors duration-200 break-all text-[var(--text-secondary)] hover:text-[var(--accent-emerald)]"
                 >
-                  shivagrover@equitrustsolutions.com
-                </a>
-              </div>
-              <div>
-                <p className="text-[0.6rem] tracking-wider uppercase mb-0.5" style={{ color: "var(--text-subtle)" }}>
-                  Website
-                </p>
-                <a
-                  href="http://www.Moneymattersbyet.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm transition-colors duration-200 text-[var(--text-secondary)] hover:text-[var(--accent-emerald)]"
-                >
-                  www.Moneymattersbyet.com
+                  info@equitrustsolutions.com
                 </a>
               </div>
               <div>
