@@ -144,18 +144,7 @@ export default function TeamSection() {
                 {member.description}
               </p>
 
-              {/* Contact if available */}
-              {member.contact && (
-                <a
-                  href={`mailto:${member.contact}`}
-                  className="inline-flex items-center gap-1.5 text-[0.7rem] transition-colors duration-200"
-                  style={{ color: "var(--text-muted)" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = member.accentColor)}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
-                >
-                  {member.contact}
-                </a>
-              )}
+             
             </motion.div>
           ))}
         </div>
