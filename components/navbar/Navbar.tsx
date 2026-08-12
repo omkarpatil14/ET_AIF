@@ -57,12 +57,12 @@ export default function Navbar() {
                 className="flex items-center gap-2.5"
               >
                 {/* Image Logo */}
-                <img 
-                  src="/logo.png" 
-                  alt="EquiTrust Logo" 
+                <img
+                  src="/logo.png"
+                  alt="EquiTrust Logo"
                   className="h-8 w-auto sm:h-10 object-contain rounded-sm"
                 />
-                
+
                 <div
                   className="hidden sm:block h-3.5 w-px ml-1.5"
                   style={{ backgroundColor: "var(--border-subtle)" }}
@@ -218,11 +218,11 @@ export default function Navbar() {
                   +91 9577700010
                 </a>
                 <a
-                  href="mailto:info@equitrustsolutions.com"
+                  href="mailto:info@equitrustaif.com"
                   className="block text-sm transition-colors"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  info@equitrustsolutions.com
+                  info@equitrustaif.com
                 </a>
               </motion.div>
             </div>

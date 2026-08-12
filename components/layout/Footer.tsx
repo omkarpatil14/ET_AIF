@@ -27,9 +27,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-1.5 mb-4">
-              <img 
-                src="/logo.png" 
-                alt="EquiTrust Logo" 
+              <img
+                src="/logo.png"
+                alt="EquiTrust Logo"
                 className="h-10 w-auto object-contain rounded-sm"
               />
             </div>
@@ -91,10 +91,10 @@ export default function Footer() {
                   Email
                 </p>
                 <a
-                  href="mailto:info@equitrustsolutions.com"
+                  href="mailto:info@equitrustaif.com"
                   className="text-sm transition-colors duration-200 break-all text-[var(--text-secondary)] hover:text-[var(--accent-emerald)]"
                 >
-                  info@equitrustsolutions.com
+                  info@equitrustaif.com
                 </a>
               </div>
               <div>
