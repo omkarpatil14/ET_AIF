@@ -100,7 +100,7 @@ export default function Footer() {
                   Address
                 </p>
                 <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-                  Sector 26, Chandigarh, India
+                Godrej Eternia, Unit No. E3G, 3rd Floor, Ind Area Chandigarh, Chandigarh, Chandigarh - 160002, India
                 </p>
               </div>
             </div>
