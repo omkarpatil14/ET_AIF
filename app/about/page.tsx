@@ -93,13 +93,12 @@ export default function AboutPage() {
                     quality and consistency of returns by reducing extreme drawdowns.
                   </p>
                   <p>
-                    By deploying 20–40% of the portfolio into dynamic hedging instruments —
-                    index puts, futures overlays, covered calls, currency derivatives — the fund
-                    aims to create a portfolio that performs across market cycles, not just in
-                    bull markets.
+                    By deploying dynamic hedging instruments — index puts, futures overlays,
+                    covered calls, currency derivatives — the fund aims to create a portfolio that
+                    performs across market cycles, not just in bull markets.
                   </p>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.8125rem" }}>
-                    Illustrative allocations. Actual allocations vary based on market conditions and risk assessment.
+                    Actual allocations vary based on market conditions and risk assessment.
                   </p>
                 </div>
               </div>

@@ -132,20 +132,7 @@ export default function Hero() {
           variants={textReveal}
           className="mt-16 lg:mt-24 flex items-end justify-between"
         >
-          <div>
-            <p
-              className="text-xs font-medium tracking-[0.18em] uppercase mb-1"
-              style={{ color: "var(--text-muted)" }}
-            >
-              Since 2026
-            </p>
-            <p
-              className="text-sm"
-              style={{ color: "var(--text-subtle)" }}
-            >
-              Sector 26, Chandigarh
-            </p>
-          </div>
+      
 
           {/* Scroll indicator */}
           <motion.div

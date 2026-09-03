@@ -324,7 +324,7 @@ export default function PerformanceSection() {
               style={{ border: "0.5px solid var(--border-subtle)", backgroundColor: "var(--bg-elevated)" }}
             >
               <p className="text-[0.65rem] font-medium tracking-widest uppercase mb-2" style={{ color: "var(--text-muted)" }}>
-                Return Objective*
+                Return Objective
               </p>
               <p className="font-display text-2xl" style={{ letterSpacing: "-0.02em", color: "var(--text-primary)" }}>
                 15–25%

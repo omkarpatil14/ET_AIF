@@ -11,7 +11,7 @@ const theses = [
     description:
       "High-conviction long positions in quality Indian equities  businesses with strong fundamentals, sectoral tailwinds, and durable competitive advantages  form the core of the portfolio.",
     points: [
-      "60–80% long-short equity exposure",
+      "Long-short equity exposure",
       "Bottom-up fundamental research",
       "Sector-diversified, max 10% single stock",
       "India-focused with structural growth bias",

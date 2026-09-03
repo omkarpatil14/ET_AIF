@@ -2,24 +2,23 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const team = [
   {
     name: "Rubina Singla",
-    title: "Director",
-    focus: "Sales, Marketing & Portfolio Strategy",
-    initials: "RS",
+    title: "Sales & Marketing",
+    image: "/team/rubina-singla.jpeg",
     description:
-      "Leads investor relations, marketing strategy, and portfolio communication at EquiTrust.",
+      "Rubina Singla is an MBA graduate with extensive experience in banking, portfolio management, and entrepreneurship. She has previously worked with an ex-HDFC Bank team and has served as a Mutual Fund Portfolio Manager, managing assets worth INR 1000 million.\n\nA successful two-time entrepreneur, Rubina brings a deep understanding of investor communication, customer engagement, and market positioning. At EquiTrust, she leads sales and marketing initiatives with a strong emphasis on trust, clarity, and long-term relationships.",
     accentColor: "var(--accent-emerald)",
   },
   {
     name: "Shiva Grover",
-    title: "Director",
-    focus: "Research, Market Insights & Investment Strategy",
-    initials: "SG",
+    title: "Research & Analysis",
+    image: "/team/shiva-grover.jpeg",
     description:
-      "Leads research, market intelligence, and investment strategy formulation at EquiTrust.",
+      "Shiva Grover is a B.Com graduate with NISM certifications in Derivatives and Research Analysis. He brings over 15 years of experience working with established financial institutions, including Anagram Rathi and Aditya Birla.\n\nWith an AUM of INR 500 million, Shiva specializes in research-based analysis, market insights, and risk-aware investment frameworks. At EquiTrust, he plays a key role in developing structured research processes and educational insights that promote rational and informed financial decision-making.",
     accentColor: "var(--accent-gold)",
   },
 ];
@@ -64,7 +63,7 @@ export default function TeamSection() {
         </div>
 
         {/* Team cards */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-3xl">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
@@ -85,21 +84,20 @@ export default function TeamSection() {
                 (e.currentTarget as HTMLElement).style.backgroundColor = "var(--bg-surface)";
               }}
             >
-              {/* Monogram placeholder */}
+              {/* Photo */}
               <div
-                className="w-16 h-16 rounded-sm flex items-center justify-center mb-6 transition-transform duration-400 group-hover:scale-105"
+                className="relative w-20 h-20 rounded-sm overflow-hidden mb-6 transition-transform duration-400 group-hover:scale-105"
                 style={{
-                  backgroundColor: "var(--bg-overlay)",
                   border: `0.5px solid ${member.accentColor}`,
                 }}
               >
-                <span
-                  className="font-display text-2xl"
-                  style={{ color: member.accentColor, letterSpacing: "-0.02em" }}
-                  aria-hidden="true"
-                >
-                  {member.initials}
-                </span>
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover object-top"
+                  sizes="80px"
+                />
               </div>
 
               {/* Accent line (appears on hover) */}
@@ -128,23 +126,18 @@ export default function TeamSection() {
                 </p>
               </div>
 
-              {/* Focus */}
-              <p
-                className="text-sm font-medium mb-3 leading-snug"
-                style={{ color: "var(--text-secondary)" }}
-              >
-                {member.focus}
-              </p>
-
               {/* Description */}
-              <p
-                className="text-xs leading-relaxed mb-4"
-                style={{ color: "var(--text-muted)" }}
-              >
-                {member.description}
-              </p>
-
-             
+              <div className="space-y-3">
+                {member.description.split("\n\n").map((para) => (
+                  <p
+                    key={para.slice(0, 40)}
+                    className="text-xs leading-relaxed"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

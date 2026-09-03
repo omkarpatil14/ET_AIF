@@ -6,8 +6,6 @@ import { motion, useInView } from "framer-motion";
 const terms = [
   { label: "Fund Category", value: "Category III AIF — Hedge Fund Strategy" },
   { label: "Liquidity", value: "Monthly / Quarterly redemptions" },
-  { label: "Management Fee", value: "2% per annum" },
-  { label: "Performance Fee", value: "20% of profits above hurdle" },
   { label: "Minimum Investment", value: "₹1 Crore" },
   { label: "Lock-in Period", value: "None — standard notice period applies" },
   { label: "Sponsor Commitment", value: "≥2.5% of corpus (skin in the game)" },
@@ -78,15 +76,7 @@ export default function FundTermsSection() {
               <p className="metric-label mb-3" style={{ color: "var(--accent-emerald)" }}>
                 Current Raise — Investor Material
               </p>
-              <p
-                className="font-display mb-1"
-                style={{ fontSize: "2.25rem", letterSpacing: "-0.025em", color: "var(--text-primary)", lineHeight: 1 }}
-              >
-                ₹200 Crore
-              </p>
-              <p className="text-xs mb-3" style={{ color: "var(--text-secondary)" }}>
-                Target fund size
-              </p>
+             
               <div className="pt-3" style={{ borderTop: "0.5px solid var(--border-subtle)" }}>
                 <p className="text-xs mb-1" style={{ color: "var(--text-muted)" }}>First Close Target</p>
                 <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>₹25 Crore by Q4 2026</p>

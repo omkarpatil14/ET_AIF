@@ -39,9 +39,7 @@ export default function Footer() {
             >
               Alternative Investment. Intelligent Hedging.
             </p>
-            <p className="text-[0.6rem] tracking-widest uppercase" style={{ color: "var(--text-subtle)" }}>
-              Since 2026 · Chandigarh, India
-            </p>
+          
           </div>
 
           {/* Navigation */}
@@ -112,24 +110,27 @@ export default function Footer() {
         {/* Divider */}
         <hr className="divider mb-6" />
 
-        {/* Disclaimer */}
-        <div className="mb-6">
+        {/* Investment Disclaimer */}
+        <div className="mb-6 space-y-3">
           <p className="disclaimer-text leading-relaxed">
             <strong className="text-[0.65rem] font-medium" style={{ color: "var(--text-subtle)" }}>
-              Important Disclaimer:{" "}
+              *Investment Disclaimer:
             </strong>
-            The information on this website is for informational purposes only and does not
-            constitute an offer or solicitation to buy or sell any security or investment product.
-            Investment in alternative investment funds involves risk, including the possible loss
-            of principal. Past performance, backtested results, illustrative returns, and projected
-            figures presented on this website are not indicative of future results and do not
-            guarantee any specific outcome. Return objectives (15–25% p.a.) are targets only and
-            are not guaranteed. Performance data attributed to the ET Growth Fund (March 2025 –
-            April 15, 2026) and AIF industry statistics are presented as described in EquiTrust&apos;s
-            investor material and should not be independently relied upon without verification.
-            Prospective investors should conduct their own due diligence and consult their financial,
-            legal, and tax advisors before making any investment decision. EquiTrust operates as a
-            Category III Alternative Investment Fund. Minimum investment: ₹1 Crore.
+          </p>
+          <p className="disclaimer-text leading-relaxed">
+            The information contained on this website is for general informational purposes only and is not intended to constitute an offer, solicitation, invitation, recommendation, or advice to invest in any fund/scheme managed or advised by the Investment Manager. The information provided should not be construed as investment, legal, tax, accounting, or other professional advice.
+          </p>
+          <p className="disclaimer-text leading-relaxed">
+            Past performance is not indicative of future performance. Any returns, performance figures, projections, estimates, or other information relating to investments are provided for illustrative and informational purposes only and should not be relied upon as a guarantee or indication of future returns. Investments in Alternative Investment Funds (&ldquo;AIFs&rdquo;) are subject to market risks and may involve the risk of loss of principal, including the possibility of loss of the entire investment.
+          </p>
+          <p className="disclaimer-text leading-relaxed">
+            Any investment decision should be made only after carefully reviewing the applicable Private Placement Memorandum (&ldquo;PPM&rdquo;), contribution agreement, and other relevant fund documents, and after obtaining independent professional advice, where appropriate.
+          </p>
+          <p className="disclaimer-text leading-relaxed">
+            The information and performance data displayed on this website may be based on information available as of a particular date and may be subject to change without notice. No representation or warranty is made as to the accuracy, completeness, or reliability of such information.
+          </p>
+          <p className="disclaimer-text leading-relaxed">
+            Investors are advised to read all scheme/fund-related documents carefully and understand the associated risks before making any investment decision.
           </p>
         </div>
 

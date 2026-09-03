@@ -33,22 +33,6 @@ const metrics: Metric[] = [
     badge: "Historical Backtest",
   },
   {
-    prefix: "",
-    value: "60–80",
-    suffix: "%",
-    label: "60–80%",
-    sublabel: "Long-Short Equity Exposure",
-    badge: "Illustrative",
-  },
-  {
-    prefix: "",
-    value: "20–40",
-    suffix: "%",
-    label: "20–40%",
-    sublabel: "Dynamic Hedging Allocation",
-    badge: "Illustrative",
-  },
-  {
     prefix: "₹",
     value: "1 Cr",
     label: "₹1 Crore",
@@ -123,7 +107,7 @@ export default function MetricsStrip() {
         style={{ backgroundColor: "var(--bg-surface)" }}
       />
       <div className="relative container-editorial">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3">
           {metrics.map((metric, i) => (
             <MetricCard key={metric.label} metric={metric} index={i} />
           ))}

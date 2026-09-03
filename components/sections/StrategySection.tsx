@@ -2,13 +2,11 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 interface StrategyLayer {
   id: string;
   label: string;
-  allocation: string;
+  role: string;
   description: string;
   details: string[];
   color: string;
@@ -19,7 +17,7 @@ const strategyLayers: StrategyLayer[] = [
   {
     id: "equity",
     label: "Long / Short Equity",
-    allocation: "60–80%",
+    role: "Core",
     description:
       "High-conviction long positions in quality Indian equities, combined with tactical short positions to profit from and hedge against specific market exposures.",
     details: [
@@ -34,7 +32,7 @@ const strategyLayers: StrategyLayer[] = [
   {
     id: "hedge",
     label: "Dynamic Hedging",
-    allocation: "20–40%",
+    role: "Protective",
     description:
       "Multi-layered hedging using index options, futures overlays, covered calls, and currency derivatives — adjusted dynamically based on market conditions.",
     details: [
@@ -49,7 +47,7 @@ const strategyLayers: StrategyLayer[] = [
   {
     id: "risk",
     label: "Risk Overlay",
-    allocation: "Always On",
+    role: "Always On",
     description:
       "A continuous risk management layer that monitors VaR, stress scenarios, and hedge ratios — rebalanced weekly with daily monitoring.",
     details: [
@@ -135,7 +133,7 @@ export default function StrategySection() {
                         className="text-xs font-medium tracking-widest uppercase mb-1"
                         style={{ color: isActive ? layer.color : "var(--text-muted)" }}
                       >
-                        {layer.allocation}
+                        {layer.role}
                       </p>
                       <p
                         className="font-medium text-sm"
@@ -185,7 +183,7 @@ export default function StrategySection() {
               minHeight: "320px",
             }}
           >
-            {/* Allocation badge */}
+            {/* Role badge */}
             <div className="flex items-center justify-between mb-6">
               <span
                 className="text-xs font-medium tracking-widest uppercase px-2 py-1 rounded-sm"
@@ -195,14 +193,14 @@ export default function StrategySection() {
                   backgroundColor: "transparent",
                 }}
               >
-                {active.allocation} of Portfolio
+                {active.role} Layer
               </span>
               <span
                 className="font-display text-5xl"
                 style={{ color: active.color, opacity: 0.15, letterSpacing: "-0.04em" }}
                 aria-hidden="true"
               >
-                {active.allocation.replace("–", "-").split("–")[0]}
+                {active.role.slice(0, 2)}
               </span>
             </div>
 
